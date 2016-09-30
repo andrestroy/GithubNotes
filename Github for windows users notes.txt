@@ -1,1 +1,8 @@
 
+#Basic steps to use github on the browser
+
+#1 Create repository
+#2 submit a new issue
+#3 create a branch (branch early, branch often, like checkin early, check in often)
+#4 perform a change into the branch
+#5 commit the change into the new branch (do not forget to add a title con the commit)
