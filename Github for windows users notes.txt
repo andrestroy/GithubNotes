@@ -6,3 +6,7 @@
 #3 create a branch (branch early, branch often, like checkin early, check in often)
 #4 perform a change into the branch
 #5 commit the change into the new branch (do not forget to add a title con the commit)
+#6 create a pull request
+--> there are tree magic words that goes into the pull request comment: fixes, resolves and closes next to the <#number of the issue>
+--> once the branch is merged, the issue is automatically fixed, closed or resolved.
+#7 merge new branch to the master branch.
