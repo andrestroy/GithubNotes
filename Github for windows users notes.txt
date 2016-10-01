@@ -10,3 +10,10 @@
 --> there are tree magic words that goes into the pull request comment: fixes, resolves and closes next to the <#number of the issue>
 --> once the branch is merged, the issue is automatically fixed, closed or resolved.
 #7 merge new branch to the master branch.
+
+
+# -------------------- Git console commands
+# create a git repository
+> mkdir <FOLDERNAME>
+> cd <FOLDERNAME>
+> git init
