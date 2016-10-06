@@ -25,4 +25,7 @@
 > git branch <branch-name>
 # move to a branch
 > git checkout <brach-name>
-
+#git stash saves the changes that are not on stage 
+> git stash
+#git add is used to add the content of the catapult
+> git add <filename> <filename>
