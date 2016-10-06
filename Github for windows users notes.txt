@@ -13,7 +13,16 @@
 
 
 # -------------------- Git console commands
+# this cheat sheet contains a summary of the most common git commands
+# https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
 # create a git repository
 > mkdir <FOLDERNAME>
 > cd <FOLDERNAME>
 > git init
+#list all the branches
+> git branch
+#create a new branch
+> git branch <branch-name>
+# move to a branch
+> git checkout <brach-name>
+
