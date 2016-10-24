@@ -29,3 +29,56 @@
 > git stash
 #git add is used to add the content of the catapult
 > git add <filename> <filename>
+
+#git "add" is used to add the files and changes into the staging area
+# all inside the staging area is like the precommit area.
+> git add
+# to include all the files changed into the staging area it is just needed to type:
+> git add .
+# use git commit -am to /add and /message in one command.
+> git commit -am "commit message"
+
+# in order to update the changes for a commit without adding a new commit for a trivial change update the commit using 
+# the amend parameter
+> git commit -a --amend
+
+##### GIT IGNORE
+# in order to exclude an specific file, add it to the global exclusions
+> git config --global --edit
+excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
+
+#GIT log
+#show in a brief summary
+> git log --oneline
+
+#most recent commit
+>git log -1
+
+#show in full detail the commits
+> git log -p
+> git log -2 -p
+
+# show log with the number of changes but not showing the entire changes.
+> git log --stat    
+
+#pull from another branch, in this case the . means the local, otherwise the source must be specified.
+> git pull . master
+
+### DIFF --------------------------------------------------------------------------
+# in order to get the diff you can use git diff <from> to <to>
+> git diff master develop
+> git diff master develop --name-only
+
+#to show the number of lines added or updated.
+>git diff master develop --stat
+
+#TAGS
+# to create a tag simple execute the following command
+# the tag will point to the current commit on the branch we are located.
+> git tag <tag_name>
+# to show all the tags created
+> git tag
+# to create a tag to a specific commit
+> git tag -a <tag_name> <commit-hash>
+# then we can checkout the content of each tag.
+> git checkout <tag_name>
