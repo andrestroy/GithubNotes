@@ -63,7 +63,8 @@ excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
 
 #pull from another branch, in this case the . means the local, otherwise the source must be specified.
 > git pull . master
-
+# pull command creates automatically a merge commit, to avoid this we can bring the changes using the fetch command
+> git fetch . master
 ### DIFF --------------------------------------------------------------------------
 # in order to get the diff you can use git diff <from> to <to>
 > git diff master develop
@@ -82,3 +83,23 @@ excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
 > git tag -a <tag_name> <commit-hash>
 # then we can checkout the content of each tag.
 > git checkout <tag_name>
+
+#stash commands
+#to list the stash stack
+> git stash list
+# to show the element at specific index e.g. index = 0
+> git stash show stash@"{0}"
+#show the changes of the stash
+> git stash show stash@"{0}" -p
+# to delete an element from the stash
+> git stash drop stash@"{0}"
+# clear the entire stash
+> git stash clear
+# save a stash with an especific name
+> git stash save "<stash-name>"
+
+# there are two ways to get the stash changes
+# 1. using the apply keyword, then stash is not removed from the stack
+> git stash apply stash@"{0}"
+# 2 using the pop keyword the stash is restored and then removed from the stack
+>git stash pop stash@"{0}"
