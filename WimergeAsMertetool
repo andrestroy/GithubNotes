@@ -1,0 +1,20 @@
+--put this content on the global git configuration file (.gitconfrig), generally located on C:\Users\<WindowsAccountName>
+[user]
+	name = andres.villarroel
+[user]
+	email = andres.villarroel@avm.com
+[difftool "winmerge"]
+	cmd = \"C:\\Program Files (x86)\\WinMerge\\WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = winmerge
+[mergetool]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
+
+[merge]
+    tool = winmerge
+[mergetool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd =  \"C:\\Program Files (x86)\\WinMerge\\WinMergeU.exe\" -u -e -dl \"Local\" -dr \"Remote\" $LOCAL $REMOTE $MERGED
