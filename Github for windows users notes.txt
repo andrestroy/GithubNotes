@@ -103,3 +103,6 @@ excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
 > git stash apply stash@"{0}"
 # 2 using the pop keyword the stash is restored and then removed from the stack
 >git stash pop stash@"{0}"
+
+#publish a branch by command line
+>git push -u origin <branch_name>
