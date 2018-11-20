@@ -106,3 +106,16 @@ excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
 
 #publish a branch by command line
 >git push -u origin <branch_name>
+
+#checkout files from another branch
+#be sure to be located on the correct folder otherwise the path wont't be recognized
+# current folder contains the folder projects
+> git checkout <branch_name> -- Projects/Path/To/File/File.cs
+
+#rename a branch
+#being in the branch to be renamed
+> git branch -m new-name
+# Delete the old-name remote branch and push the new-name local branch.
+> git push origin :old-name new-name
+# Reset the upstream branch for the new-name local branch.
+> git push origin -u new-name
