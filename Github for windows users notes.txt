@@ -119,3 +119,6 @@ excludesfile = E:\\My Documents\\GitHub\\git_global_ignore.txt
 > git push origin :old-name new-name
 # Reset the upstream branch for the new-name local branch.
 > git push origin -u new-name
+
+#switch branch when heads are different (in current branch)
+git switch -C other-branch-name origin/other-branch-name
